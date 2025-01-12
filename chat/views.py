@@ -8,6 +8,9 @@ import json
 # Create your views here.
 from googletrans import Translator
 
+YOURWEATHERAPI  = 'YOUR WHETHER API'
+YOURNEWSAPI = 'YOUR NEWS API'
+
 #list of all lang with lang codes
 lang_list = {
             'Afrikaans' : 'af',
@@ -153,7 +156,7 @@ def index(request):
 
 def weather(query):
     try:
-        api = '1e51b1bccbea404dbe494639240802'
+        api = YOURWEATHERAPI 
         weatherreport = re.search(r'.* temperature in (.+)',query)
         if weatherreport:
             city = weatherreport.group(1).capitalize()
@@ -195,7 +198,7 @@ def wiki(query):
 def news(query):
     try:
         text = query
-        api = '076e249748e44502b70c04de891f4d4a'
+        api = YOURNEWSAPI
         match = re.search(r".+ news .+ about (.+)", text)
         topic = match.group(1)
         url = f'https://newsapi.org/v2/everything?q={topic}&sortBy=popularity&apiKey={api}'
