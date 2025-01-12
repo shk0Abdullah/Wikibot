@@ -62,8 +62,8 @@ Wiki Bot is a Django-based web application designed to provide concise and preci
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/shk0Abdullah/wiki-bot.git
-   cd wiki-bot
+   git clone https://github.com/shk0Abdullah/Wikibot
+   cd Wikibot
    ```
 
 2. Set up a virtual environment (optional but recommended):
