@@ -1,0 +1,6 @@
+Django>=3.2,<5.0
+django-tailwind
+requests
+wikipedia
+googletrans==4.0.0-rc1
+datetime
